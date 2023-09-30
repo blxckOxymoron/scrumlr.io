@@ -27,18 +27,14 @@
     background-color: $color-dark-two;
   }
 }
+
 .column--hidden {
-  background-image: repeating-linear-gradient(
-    45deg,
-    $color-white-one,
-    $color-white-one 20px,
-    var(--accent-color--background-light) 20px,
-    var(--accent-color--background-light) 40px
-  );
+  background-image: $column-stripes--light;
+  background-attachment: fixed;
 }
 [theme="dark"] {
   .column--hidden {
-    background-image: repeating-linear-gradient(45deg, $color-dark-one, $color-dark-one 20px, var(--accent-color--background-dark) 20px, var(--accent-color--background-dark) 40px);
+    background-image: $column-stripes--dark;
   }
 }
 

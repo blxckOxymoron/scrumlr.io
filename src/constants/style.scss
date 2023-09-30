@@ -180,6 +180,22 @@ $menu-desktop: "screen and (min-width: 1344px)";
 $box-shadow--light: 0px 5px 15px 0px rgba(0, 0, 0, 0.2);
 $box-shadow--dark: 0px 5px 15px 0px rgba(0, 0, 0, 0.35);
 
+// gradients
+$column-stripes--light: repeating-linear-gradient(
+  45deg,
+  $color-white-one,
+  $color-white-one 20px,
+  var(--accent-color--background-light) 20px,
+  var(--accent-color--background-light) 40px
+);
+$column-stripes--dark: repeating-linear-gradient(
+  45deg,
+  $color-dark-one,
+  $color-dark-one 20px,
+  var(--accent-color--background-dark) 20px,
+  var(--accent-color--background-dark) 40px
+);
+
 // helper functions
 @function inset-border($left: false, $right: false, $top: false, $bottom: false, $color: var(--accent-color)) {
   $props: ();
